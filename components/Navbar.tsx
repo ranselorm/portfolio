@@ -18,8 +18,11 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="text-white px-4 lg:px-20">
-      <div className="container mx-auto px-2 flex justify-between items-center py-2 relative bg-blue-900 rounded-full">
+    <nav
+      className="text-white md:py-4 px-4 lg:px-20 font-primary"
+      style={{ fontFamily: "Aeonik, sans-serif" }}
+    >
+      <div className="container mx-auto px-2 flex justify-between items-center py-2 relative bg-primary rounded-full">
         {/* Left Links */}
         <div className="hidden md:flex space-x-6 z-10">
           {leftNavLinks?.map((link, index) => (
