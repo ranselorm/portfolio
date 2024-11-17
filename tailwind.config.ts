@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         primary: ["Aeonik", "sans-serif"],
         heading: ["Rubik", "sans-serif"],
+        eaves: ["Eaves", "sans-serif"],
       },
     },
   },

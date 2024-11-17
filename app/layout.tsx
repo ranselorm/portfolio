@@ -13,6 +13,11 @@ const Rubik = localFont({
   variable: "--font-rubik",
   weight: "100 900",
 });
+const Eaves = localFont({
+  src: "./fonts/Eaves.woff2",
+  variable: "--font-eaves",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Aeonik.variable} ${Rubik.variable} } antialiased`}>
+      <body
+        className={`${Aeonik.variable} ${Rubik.variable} ${Eaves.variable} } antialiased`}
+      >
         {children}
       </body>
     </html>
