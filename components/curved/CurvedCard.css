@@ -2,7 +2,7 @@ img {
   --r: 25px; /* the radius */
   --s: 80px; /* the size of the corner*/
 
-  width: 400px;
+  width: 300px;
   min-height: 400px;
   border-radius: var(--r);
   object-fit: contain;

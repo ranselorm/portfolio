@@ -5,8 +5,8 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Hero: React.FC = () => {
   return (
-    <section className="py-20 font-primary flex items-center justify-center">
-      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8 px-6 md:px-12">
+    <section className="py-20 font-primary flex items-center justify-center section-padding">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
         <div className="text-center md:text-left flex-1 flex flex-col space-y-5">
           <p className="text-xl font-semibold">Hello there👋,</p>
           <h3 className="font-bold text-5xl font-heading">

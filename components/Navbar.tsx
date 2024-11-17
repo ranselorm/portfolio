@@ -18,10 +18,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav
-      className="text-white md:py-4 px-4 lg:px-20"
-      style={{ fontFamily: "Aeonik, sans-serif" }}
-    >
+    <nav className="text-white py-4 section-padding">
       <div className="container mx-auto flex justify-between items-center px-2 py-2 relative bg-primary rounded-full">
         {/* Left Links */}
         <div className="hidden md:flex space-x-6 z-10">
