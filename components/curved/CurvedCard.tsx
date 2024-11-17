@@ -12,7 +12,7 @@ const CurvedCard: React.FC<CurvedCardProps> = ({
 }) => {
   return (
     <div className="outer bottom-right">
-      <img src="/images/pass.png" />
+      {/* <img src="/images/pass.png" /> */}
     </div>
   );
 };

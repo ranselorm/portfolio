@@ -1,16 +1,19 @@
 import Button from "@/components/Button";
 import CurvedCard from "./curved/CurvedCard";
+import Social from "./Social";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Hero: React.FC = () => {
   return (
     <section className="py-20 font-primary flex items-center justify-center">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8 px-6 md:px-12">
-        <div className="text-center md:text-left flex-1 flex flex-col space-y-4">
-          <p className="text-xl">Hello there👋,</p>
-          <h3 className="font-medium text-3xl">
-            I'm <span>Randy</span>, a Software Engineer.
+        <div className="text-center md:text-left flex-1 flex flex-col space-y-5">
+          <p className="text-xl font-semibold">Hello there👋,</p>
+          <h3 className="font-bold text-5xl font-heading">
+            I'm <span className="text-primary">Randy</span>, a Software <br />{" "}
+            Engineer.
           </h3>
-          <p className="text-gray-700 text-lg">
+          <p className="text-gray-700 text-xl w-full md:max-w-5xl">
             Specialized in MERN Stack, I welcome you to my world of innovative
             web applications development. Let's create something great together!
           </p>
@@ -25,10 +28,18 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Right Image */}
-        <div className="relative">
-          <CurvedCard src="/images/passport.jpg" />
-          <div className="w-24 h-24 bg-primary absolute -bottom-1 -right-2 z-10 rounded-full"></div>
-        </div>
+        <main className="flex-1 flex items-center justify-center gap-x-20">
+          <div className="relative md:w-[350px]">
+            <CurvedCard src="/images/passport.jpg" />
+            <div className="w-24 h-24 bg-primary absolute -bottom-2 right-6 z-10 rounded-full flex items-center justify-center">
+              <Icon
+                icon="fluent:arrow-up-right-28-regular"
+                className="text-5xl text-white"
+              />
+            </div>
+          </div>
+          <Social />
+        </main>
       </div>
     </section>
   );
