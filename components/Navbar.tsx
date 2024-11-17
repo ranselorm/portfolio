@@ -19,10 +19,10 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className="text-white md:py-4 px-4 lg:px-20 font-primary"
+      className="text-white md:py-4 px-4 lg:px-20"
       style={{ fontFamily: "Aeonik, sans-serif" }}
     >
-      <div className="container mx-auto px-2 flex justify-between items-center py-2 relative bg-primary rounded-full">
+      <div className="container mx-auto flex justify-between items-center px-2 py-2 relative bg-primary rounded-full">
         {/* Left Links */}
         <div className="hidden md:flex space-x-6 z-10">
           {leftNavLinks?.map((link, index) => (
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
                 link.label === "Home"
                   ? "bg-white cursor-pointer text-black rounded-full"
                   : ""
-              } px-6 py-2`}
+              } px-5 py-2`}
               key={index}
             >
               {link.label}

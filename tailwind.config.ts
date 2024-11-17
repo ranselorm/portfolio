@@ -11,10 +11,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#004792",
+        primary: "#583ebc",
       },
       fontFamily: {
         primary: ["Aeonik", "sans-serif"],
+        heading: ["Rubik", "sans-serif"],
       },
     },
   },
