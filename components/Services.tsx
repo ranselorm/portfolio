@@ -4,12 +4,22 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Services = () => {
   return (
-    <section className="bg-primary h-full section-padding">
+    <section className="bg-primary h-full section-padding font-primary">
+      <div className="text-center mb-12 text-white flex-col flex gap-y-2">
+        <p className="text-xl font-medium">My Expertise</p>
+        <h3 className="text-5xl capitalize text-center text-white font-heading font-semibold">
+          Innovative solutions
+        </h3>
+        <p className="max-w-2xl mx-auto mb-12 font-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          quisquam unde nemo illum reiciendis
+        </p>
+      </div>
       <div className="flex flex-col md:flex-row items-center justify-center container mx-auto gap-4">
-        <ServicesCard title="Web Application" />
-        <ServicesCard title="Landing Page" />
-        <ServicesCard title="Restful APIs" />
-        <ServicesCard title="Responsive Design" />
+        <ServicesCard title="Web Application" image="/images/web.jpg" />
+        <ServicesCard title="Landing Page" image="/images/vr.jpg" />
+        <ServicesCard title="Restful APIs" image="/images/design.jpg" />
+        <ServicesCard title="Responsive Design" image="/images/book.jpg" />
       </div>
     </section>
   );
