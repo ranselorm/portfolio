@@ -13,7 +13,7 @@ const Curved: React.FC<CurvedCardProps> = ({ title, image }) => {
   return (
     <div>
       <div className="fill bottom-right">
-        <div className="px-2 py-4 text-white font-medium text-lg">{title}</div>
+        <div className="px-2 py-4 text-black font-medium text-lg">{title}</div>
         <img src={image} />
       </div>
     </div>

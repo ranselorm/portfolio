@@ -21,7 +21,7 @@ img {
   min-height: 350px;
   border-radius: var(--r);
   object-fit: cover;
-  background-color: #583ebc;
+  background-color: #fff;
   position: relative;
 
   --_m: /calc(2 * var(--r)) calc(2 * var(--r)) radial-gradient(

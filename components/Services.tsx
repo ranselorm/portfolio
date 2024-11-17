@@ -10,7 +10,7 @@ const Services = () => {
         <h3 className="text-5xl capitalize text-center text-white font-heading font-semibold">
           Innovative solutions
         </h3>
-        <p className="max-w-2xl mx-auto mb-12 font-xl">
+        <p className="max-w-2xl mx-auto mb-8 font-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           quisquam unde nemo illum reiciendis
         </p>
