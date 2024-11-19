@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#583ebc",
+        dark: "#22212a",
       },
       fontFamily: {
         primary: ["Aeonik", "sans-serif"],

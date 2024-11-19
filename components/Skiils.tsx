@@ -16,8 +16,8 @@ const Skiils = () => {
         </div>
         {/* cards */}
         <div className="bg-gray-100 md:w-4/6 grid md:grid-cols-5 grid-cols-2 gap-5">
-          <div className="rounded bg-red-400 dark:bg-gray-800 w-full h-28 col-span-1 flex justify-center items-center p-5"></div>
-          <div className="rounded bg-red-400 dark:bg-gray-800 w-full h-28 col-span-1 flex justify-center items-center p-5"></div>
+          <div className="rounded bg-red-400 dark:bg-gray-800 w-full h-28 col-span-1 flex justify-center items-center p-5 animate-pulse"></div>
+          <div className="rounded bg-red-400 animate-bounce dark:bg-gray-800 w-full h-28 col-span-1 flex justify-center items-center p-5"></div>
           <div className="rounded bg-red-400 dark:bg-gray-800 w-full h-28 col-span-1 flex justify-center items-center p-5"></div>
           <div className="rounded bg-red-400 dark:bg-gray-800 w-full h-28 col-span-1 flex justify-center items-center p-5"></div>
           <div className="rounded bg-red-400 dark:bg-gray-800 w-full h-28 col-span-1 flex justify-center items-center p-5"></div>

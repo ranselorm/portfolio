@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="text-white py-4 section-padding">
-      <div className="container mx-auto flex justify-between items-center px-2 py-2 relative bg-primary rounded-full">
+      <div className="container mx-auto flex justify-between items-center px-2 py-2 relative bg-dark rounded-full border-[1px] border-gray-800">
         {/* Left Links */}
         <div className="hidden md:flex space-x-6 z-10">
           {leftNavLinks?.map((link, index) => (
