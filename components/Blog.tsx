@@ -10,7 +10,7 @@ const Blog = () => {
             <p className="section-subtitle">Stories</p>
             <h3 className="section-title">Blog Update</h3>
           </div>
-          <p className="text-sm max-w-2xl font-xl ">
+          <p className="max-w-2xl text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi unde
             culpa aperiam ab accusantium et adipisci illum vel libero provident
           </p>

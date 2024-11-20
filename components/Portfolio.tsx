@@ -78,7 +78,7 @@ const Portfolio: React.FC = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`text-sm px-2 py-2 rounded ${
+              className={`text-base px-2 py-2 rounded ${
                 activeCategory === category
                   ? "border-b border-primary"
                   : "text-white"
