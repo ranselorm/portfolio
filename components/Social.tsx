@@ -3,13 +3,12 @@ import React from "react";
 
 const Social = () => {
   return (
-    <div className="hidden md:flex flex-col items-center justify-center h-full gap-4">
+    <div className="hidden md:flex flex-col items-center justify-center h-full gap-4 text-white">
       <p
         style={{
           writingMode: "vertical-rl", // Make the text vertical
           textAlign: "center",
           fontSize: "16px",
-          color: "#583ebc", // Purple color for text
           margin: "0",
         }}
       >
@@ -36,14 +35,12 @@ const Social = () => {
           icon="proicons:x-twitter"
           style={{
             fontSize: "16px",
-            color: "#583ebc", // Purple color for icons
           }}
         />
         <Icon
           icon="ri:linkedin-line"
           style={{
             fontSize: "16px",
-            color: "#583ebc",
           }}
         />
       </div>

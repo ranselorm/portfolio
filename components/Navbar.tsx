@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
               href="#"
               className={`${
                 link.label === "Home"
-                  ? "bg-white cursor-pointer text-black rounded-full"
+                  ? "bg-primary cursor-pointer text-white rounded-full"
                   : ""
               } px-5 py-2`}
               key={index}

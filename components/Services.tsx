@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <section className="bg-dark h-full section-padding font-eaves">
       <div className="text-center mb-12 text-white flex-col flex gap-y-2">
-        <p className="text-xl font-medium">My Expertise</p>
+        <p className="text-xl font-medium text-primary">My Expertise</p>
         <h3 className="text-5xl capitalize text-center text-white font-heading font-semibold">
           Innovative solutions
         </h3>

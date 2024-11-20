@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Hero: React.FC = () => {
   return (
-    <section className="py-20 font-primary flex items-center justify-center section-padding">
+    <section className="py-20 font-primary flex items-center justify-center section-padding text-white">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
         <div className="text-center md:text-left flex-1 flex flex-col space-y-5">
           <p className="text-xl font-semibold">Hello there👋,</p>
@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
             I'm <span className="text-primary">Randy</span>, a Software <br />{" "}
             Engineer.
           </h3>
-          <p className="text-gray-700 text-xl w-full md:max-w-5xl">
+          <p className="text-xl w-full md:max-w-5xl">
             Specialized in MERN Stack, I welcome you to my world of innovative
             web applications development. Let's create something great together!
           </p>
