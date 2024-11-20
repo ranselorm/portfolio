@@ -22,7 +22,7 @@ const Skiils = () => {
     <section className="section-padding font-primary text-white">
       <main className="container mx-auto flex flex-col md:flex-row items-center gap-4">
         <div className="flex-col flex md:w-2/6 gap-y-4">
-          <p className="text-xl font-medium text-primary">My Skiils</p>
+          <p className="section-subtitle">My Skills</p>
           <h3 className="section-title">
             Beautiful and unique digital experiences
           </h3>

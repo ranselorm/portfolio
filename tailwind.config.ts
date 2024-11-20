@@ -20,7 +20,7 @@ module.exports = {
         eaves: ["Eaves", "sans-serif"],
       },
       animation: {
-        "fade-in": "fadeIn 0.2s ease-in-out forwards",
+        "fade-in": "fadeIn 0.5s ease-in-out forwards",
       },
       keyframes: {
         fadeIn: {

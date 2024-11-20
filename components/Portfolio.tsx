@@ -109,7 +109,7 @@ const Portfolio: React.FC = () => {
                 <h3 className="text-2xl text-white font-bold">
                   {project.title}
                 </h3>
-                <a href="#" target="_blank">
+                <a href="#">
                   <Icon
                     icon="carbon:launch"
                     className="absolute top-3 right-3 font-bold text-xl cursor-pointer"
