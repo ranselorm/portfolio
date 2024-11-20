@@ -23,7 +23,7 @@ const Skiils = () => {
       <main className="container mx-auto flex flex-col md:flex-row items-center gap-4">
         <div className="flex-col flex md:w-2/6 gap-y-4">
           <p className="text-xl font-medium text-primary">My Skiils</p>
-          <h3 className="text-3xl font-heading font-semibold">
+          <h3 className="section-title">
             Beautiful and unique digital experiences
           </h3>
           <p className="mb-8 md:mb-0 font-xl text-left">
