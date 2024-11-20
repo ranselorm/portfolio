@@ -89,13 +89,12 @@ const Portfolio: React.FC = () => {
           ))}
         </div>
 
-        {/* Project Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
               className="relative bg-white rounded shadow overflow-hidden group transform transition duration-500 ease-in-out h-[300px]"
-              style={{ animationDelay: `${index * 0.1}s` }} // Staggered animation
+              style={{ animationDelay: `${index * 0.3}s` }} // Staggered animation
             >
               {/* Project Image */}
               <img
