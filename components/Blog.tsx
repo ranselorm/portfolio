@@ -15,7 +15,7 @@ const Blog = () => {
             culpa aperiam ab accusantium et adipisci illum vel libero provident
           </p>
         </div>
-        <div className="my-12 flex flex-col md:flex-row items-center justify-between">
+        <div className="mt-20 flex flex-col md:flex-row items-center justify-between">
           <BlogCard
             title="A great journey"
             image="/images/project5.jpg"

@@ -27,8 +27,8 @@ const Skiils = () => {
             Beautiful and unique digital experiences
           </h3>
           <p className="mb-8 md:mb-0 font-xl text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            quisquam unde nemo illum reiciendis
+            Skills, tools, and technologies that I handle better than a game
+            controller.
           </p>
         </div>
         {/* cards */}
