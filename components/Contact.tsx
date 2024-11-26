@@ -1,60 +1,31 @@
-"use client";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
 } from "@/components/ui/sheet";
+import { useSheet } from "@/context/SheetContext";
+import { Button } from "./ui/button";
 
 const Contact = () => {
+  const { isOpen, closeSheet } = useSheet();
+
   return (
-    <Sheet>
-      <SheetTrigger asChild>
-        <Button variant="outline">Open</Button>
-      </SheetTrigger>
+    <Sheet open={isOpen} onOpenChange={closeSheet}>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
+          <SheetTitle>Let's Start a Project</SheetTitle>
           <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
+            This is your opportunity to share your vision and goals. Let's
+            collaborate!
           </SheetDescription>
         </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input
-              id="name"
-              value="Pedro Duarte"
-              className="col-span-3"
-              onChange={() => console.log("hello")}
-            />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input
-              id="username"
-              value="@peduarte"
-              className="col-span-3"
-              onChange={() => console.log("hello")}
-            />
-          </div>
+        <div className="flex justify-end gap-4 mt-4">
+          <Button variant="outline" onClick={closeSheet}>
+            Close
+          </Button>
         </div>
-        <SheetFooter>
-          <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose>
-        </SheetFooter>
       </SheetContent>
     </Sheet>
   );

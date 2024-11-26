@@ -1,6 +1,11 @@
+"use client";
 import React from "react";
+import { Button } from "./ui/button";
+import { useSheet } from "@/context/SheetContext";
 
 const Connect = () => {
+  const { openSheet } = useSheet();
+
   return (
     <section className="section-padding">
       <div className="bg-dark h-max md:h-[150px] flex items-center justify-center text-white font-main rounded-lg">
@@ -13,10 +18,9 @@ const Connect = () => {
             you bring the ideas!
           </div>
           <div className="w-full md:w-max">
-            <button className="bg-primary px-3 py-3 rounded text-white flex items-center justify-center gap-1 w-full font-bold">
-              {/* <PiHandFistLight className="text-[18px]" /> */}
-              <span className="text-[14px]">Let's do this</span>
-            </button>
+            <Button variant="outline" onClick={openSheet}>
+              Open
+            </Button>
           </div>
         </div>
       </div>
