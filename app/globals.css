@@ -17,3 +17,9 @@ body {
     @apply px-4 md:px-20 py-12;
   }
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

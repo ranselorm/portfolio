@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning>
+    <html>
       <body
         className={`${Aeonik.variable} ${Rubik.variable} ${Eaves.variable} } antialiased`}
       >
