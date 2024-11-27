@@ -56,46 +56,31 @@ const Contact = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={(state) => !state && closeSheet()}>
-      <DialogTrigger asChild>
-        <Button variant="default">Contact Us</Button>
-      </DialogTrigger>
       <DialogTitle className="hidden">Title</DialogTitle>
-      <DialogContent className="max-w-[900px] w-full font-primary">
+      <DialogContent className="max-w-[900px] w-full font-primary bg-dark border-none">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Section */}
-          <div className="bg-teal-700 text-white p-6 rounded-lg flex flex-col justify-between">
+          <div className="text-white p-6 rounded-lg flex flex-col justify-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 font-heading">
+              <h3 className="text-2xl font-bold mb-4 font-heading text-primary">
                 Let’s talk on something great together
               </h3>
-              <p className="text-teal-300">
-                Please fill out the form below to get started.
-              </p>
             </div>
             <div className="space-y-4 mt-6">
               <div className="flex items-center space-x-2">
                 <Icon icon="ic:baseline-email" className="w-5 h-5" />
-                <p>andreaDesign@gmail.com</p>
+                <p>selorm@berthengineering.com</p>
               </div>
               <div className="flex items-center space-x-2">
                 <Icon icon="ic:baseline-phone" className="w-5 h-5" />
-                <p>+34 123 456 789</p>
+                <p>+233 532 605 082</p>
               </div>
-              <div className="flex items-center space-x-2">
-                <Icon icon="ic:baseline-location-on" className="w-5 h-5" />
-                <p>123 Street 487 House</p>
-              </div>
-            </div>
-            <div className="flex space-x-4 mt-6">
-              <Icon icon="mdi:linkedin" className="w-6 h-6" />
-              <Icon icon="mdi:behance" className="w-6 h-6" />
-              <Icon icon="mdi:instagram" className="w-6 h-6" />
             </div>
           </div>
 
           {/* Right Section */}
-          <div className="bg-white p-6 rounded-lg">
-            <form className="space-y-6" onSubmit={handleSubmit}>
+          <div className="bg-white p-6 rounded-lg shadow-xl">
+            <form className="space-y-5" onSubmit={handleSubmit}>
               {/* Interest Selection */}
               <div>
                 <Label className="block text-sm font-medium text-gray-700 mb-2">
@@ -135,6 +120,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="John Smith"
                   required
+                  className="border border-primary  focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
                 />
               </div>
 
@@ -149,6 +135,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="email@gmail.com"
                   required
+                  className="border border-primary  focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
                 />
               </div>
 
@@ -163,6 +150,7 @@ const Contact = () => {
                   placeholder="Your message..."
                   rows={4}
                   required
+                  className="border border-primary  focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
                 />
               </div>
 
@@ -171,7 +159,7 @@ const Contact = () => {
 
               {/* Submit Button */}
               <div className="flex justify-end">
-                <Button type="submit" className="w-full md:w-auto">
+                <Button type="submit" className="w-full bg-primary">
                   Send Message
                 </Button>
               </div>
