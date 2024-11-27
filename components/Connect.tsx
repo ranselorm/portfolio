@@ -5,6 +5,7 @@ import { useSheet } from "@/context/SheetContext";
 
 const Connect = () => {
   const { openSheet } = useSheet();
+  console.log(openSheet);
 
   return (
     <section className="section-padding">
@@ -18,8 +19,9 @@ const Connect = () => {
             you bring the ideas!
           </div>
           <div className="w-full md:w-max">
-            <Button variant="outline" onClick={openSheet}>
-              Open
+            {/* Call openSheet when the button is clicked */}
+            <Button className="bg-primary" onClick={openSheet}>
+              Let's do this!
             </Button>
           </div>
         </div>

@@ -1,3 +1,4 @@
+"use client";
 import {
   Sheet,
   SheetContent,
@@ -12,8 +13,8 @@ const Contact = () => {
   const { isOpen, closeSheet } = useSheet();
 
   return (
-    <Sheet open={isOpen} onOpenChange={closeSheet}>
-      <SheetContent>
+    <Sheet open={isOpen} onOpenChange={(state) => !state && closeSheet()}>
+      <SheetContent className="w-[700px]">
         <SheetHeader>
           <SheetTitle>Let's Start a Project</SheetTitle>
           <SheetDescription>
