@@ -5,7 +5,6 @@ import { useSheet } from "@/context/SheetContext";
 
 const Connect = () => {
   const { openSheet } = useSheet();
-  console.log(openSheet);
 
   return (
     <section className="section-padding">
