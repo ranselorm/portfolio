@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { SheetProvider } from "@/context/SheetContext";
+import { Toaster } from "@/components/ui/toaster";
 
 const Aeonik = localFont({
   src: "./fonts/Aeonik-Regular.woff",
@@ -35,7 +36,10 @@ export default function RootLayout({
       <body
         className={`${Aeonik.variable} ${Rubik.variable} ${Eaves.variable} } antialiased`}
       >
-        <SheetProvider>{children}</SheetProvider>
+        <SheetProvider>
+          {children}
+          <Toaster />
+        </SheetProvider>
       </body>
     </html>
   );
