@@ -64,8 +64,8 @@ const Contact = () => {
   return (
     <Dialog open={isOpen} onOpenChange={(state) => !state && closeSheet()}>
       <DialogTitle className="hidden">Title</DialogTitle>
-      <DialogContent className="max-w-[900px] w-full font-primary bg-grey border-none">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <DialogContent className="max-w-[500px] w-full h-[90vh] font-primary bg-grey border-none">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
           {/* left */}
           <div className="bg-transparent p-6">
             <form className="space-y-5" onSubmit={handleSubmit}>
@@ -164,15 +164,15 @@ const Contact = () => {
                 Let’s talk on something great together
               </h3>
             </div> */}
-            <div className="mx-auto">
+            {/* <div className="mx-auto">
               <img
                 src="/contact.png"
                 alt="contact-image"
                 className="object-contain"
               />
-            </div>
+            </div> */}
 
-            <div className="space-y-4 mt-6 text-black text-center">
+            {/* <div className="space-y-4 mt-6 text-black text-center">
               <div className="flex items-center space-x-2">
                 <Icon icon="ic:baseline-phone" className="w-5 h-5" />
                 <p>+233 532 605 082</p>
@@ -181,7 +181,7 @@ const Contact = () => {
                 <Icon icon="ic:baseline-email" className="w-5 h-5" />
                 <p>selorm@berthengineering.com</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </DialogContent>
