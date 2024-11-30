@@ -17,6 +17,7 @@ import { useState } from "react";
 import { useSheet } from "@/context/SheetContext";
 import { Toast } from "./Toast";
 import { useToast } from "@/hooks/use-toast";
+import Image from "next/image";
 
 const Contact = () => {
   const { isOpen, closeSheet } = useSheet();
@@ -157,20 +158,28 @@ const Contact = () => {
           </div>
 
           {/* Left Section */}
-          <div className="text-white p-6 rounded-lg flex flex-col justify-center">
-            <div>
+          <div className="text-white p-6 rounded-lg flex flex-col justify-between items-center">
+            {/* <div>
               <h3 className="text-2xl font-bold mb-4 font-heading text-primary">
                 Let’s talk on something great together
               </h3>
+            </div> */}
+            <div className="mx-auto">
+              <img
+                src="/contact.png"
+                alt="contact-image"
+                className="object-contain"
+              />
             </div>
-            <div className="space-y-4 mt-6">
-              <div className="flex items-center space-x-2">
-                <Icon icon="ic:baseline-email" className="w-5 h-5" />
-                <p>selorm@berthengineering.com</p>
-              </div>
+
+            <div className="space-y-4 mt-6 text-black text-center">
               <div className="flex items-center space-x-2">
                 <Icon icon="ic:baseline-phone" className="w-5 h-5" />
                 <p>+233 532 605 082</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Icon icon="ic:baseline-email" className="w-5 h-5" />
+                <p>selorm@berthengineering.com</p>
               </div>
             </div>
           </div>
