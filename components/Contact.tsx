@@ -64,7 +64,7 @@ const Contact = () => {
   return (
     <Dialog open={isOpen} onOpenChange={(state) => !state && closeSheet()}>
       <DialogTitle className="hidden">Title</DialogTitle>
-      <DialogContent className="max-w-[500px] w-full h-[90vh] font-primary bg-grey border-none">
+      <DialogContent className="md:max-w-[500px] w-full h-[90vh] font-primary bg-grey border-none">
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
           {/* left */}
           <div className="bg-transparent p-6">
