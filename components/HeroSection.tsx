@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 
 const HeroSection: React.FC = () => {
@@ -20,8 +21,12 @@ const HeroSection: React.FC = () => {
           molestias, repellat accusantium laborum voluptatibus totam ea eos
           maxime nihil impedit.
         </p>
-        <button className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 w-max mx-auto">
-          Portfolio <span>hello</span>
+        <button className="px-4 py-2 bg-primary text-white rounded hover:bg-dark w-max mx-auto flex items-center gap-x-2">
+          Portfolio
+          <Icon
+            icon="fluent:arrow-up-right-28-regular"
+            className="text-lg text-white"
+          />
         </button>
       </div>
     </section>
