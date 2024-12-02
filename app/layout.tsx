@@ -20,6 +20,11 @@ const Montserrat = localFont({
   variable: "--font-mont",
   weight: "100 900",
 });
+const puremechanic = localFont({
+  src: "./fonts/puremechanic.ttf",
+  variable: "--font-pure",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -34,7 +39,7 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={`${Aeonik.variable} ${Rubik.variable} ${Montserrat.variable} } antialiased`}
+        className={`${Aeonik.variable} ${Rubik.variable} ${Montserrat.variable} ${puremechanic.variable}} antialiased`}
       >
         <SheetProvider>
           {children}

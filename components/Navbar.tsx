@@ -4,8 +4,9 @@ import Link from "next/link";
 
 const leftNavLinks = [
   { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Service" },
+  { href: "#services", label: "Services" },
+  { href: "#portfolio", label: "Portfolio" },
+  { href: "#blog", label: "Blog" },
 ];
 
 const rightNavLinks = [
@@ -18,47 +19,27 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="text-white py-4 section-padding">
-      <div className="container mx-auto flex justify-between items-center px-2 py-2 relative bg-dark rounded-full border-[1px] border-gray-800">
+    <nav className="text-black py-4 section-padding font-mont">
+      <div className="container mx-auto flex justify-between items-center px-2 py-2 relative bg-white rounded-full border-[1px] border-gray-800">
+        {/* Logo */}
+        <Link href="" className="px-3">
+          <h2 className="font-pure font-bold text-2xl">ransel.</h2>
+        </Link>
+
         {/* Left Links */}
-        <div className="hidden md:flex space-x-6 z-10">
+        <div className="hidden md:flex space-x-4 z-10 font-medium">
           {leftNavLinks?.map((link, index) => (
-            <Link
-              href="#"
-              className={`${
-                link.label === "Home"
-                  ? "bg-primary cursor-pointer text-white rounded-full"
-                  : ""
-              } px-5 py-2`}
-              key={index}
-            >
+            <Link href="#" className="px-5 py-2" key={index}>
               {link.label}
             </Link>
           ))}
-        </div>
-
-        {/* Logo */}
-        <div className="flex justify-center">
-          <div className="font-bold bg-white rounded-full text-black p-2 text-sm">
-            RS
-          </div>
         </div>
 
         {/* Right Links */}
-        <div className="hidden md:flex space-x-6 z-10">
-          {rightNavLinks?.map((link, index) => (
-            <Link
-              href="#"
-              className={`${
-                link.label === "Home"
-                  ? "bg-white cursor-pointer text-black rounded-full"
-                  : ""
-              } px-6 py-2`}
-              key={index}
-            >
-              {link.label}
-            </Link>
-          ))}
+        <div className="hidden md:flex z-10 px-1">
+          <button className="bg-primary px-4 text-white rounded-full py-2">
+            Contact
+          </button>
         </div>
 
         {/* Hamburger menu for small screens */}

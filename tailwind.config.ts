@@ -25,6 +25,7 @@ module.exports = {
         primary: ["Aeonik", "sans-serif"],
         heading: ["Rubik", "sans-serif"],
         mont: ["Montserrat", "sans-serif"],
+        pure: ["puremechanic", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out forwards",
