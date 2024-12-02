@@ -16,11 +16,15 @@ module.exports = {
         dark: "#22212a",
         grey: "#ebf2f9",
         deep: "#dfebf6",
+        spotlight: "rgba(255, 255, 255, 0.1)",
+      },
+      backgroundImage: {
+        "hero-bg": "url('/images/hero.jpg')",
       },
       fontFamily: {
         primary: ["Aeonik", "sans-serif"],
         heading: ["Rubik", "sans-serif"],
-        eaves: ["Eaves", "sans-serif"],
+        mont: ["Montserrat", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out forwards",

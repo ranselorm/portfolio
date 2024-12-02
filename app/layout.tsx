@@ -15,9 +15,9 @@ const Rubik = localFont({
   variable: "--font-rubik",
   weight: "100 900",
 });
-const Eaves = localFont({
-  src: "./fonts/Eaves.woff2",
-  variable: "--font-eaves",
+const Montserrat = localFont({
+  src: "./fonts/Montserrat.ttf",
+  variable: "--font-mont",
   weight: "100 900",
 });
 
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={`${Aeonik.variable} ${Rubik.variable} ${Eaves.variable} } antialiased`}
+        className={`${Aeonik.variable} ${Rubik.variable} ${Montserrat.variable} } antialiased`}
       >
         <SheetProvider>
           {children}
